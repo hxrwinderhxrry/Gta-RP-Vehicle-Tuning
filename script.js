@@ -25,39 +25,39 @@ document.addEventListener("DOMContentLoaded", () => {
                 "lvl 1": 0.025,
                 "lvl 2": 0.05,
                 "lvl 3": 0.075,
-                "lvl 4": 0.000   
+                "lvl 4": 0.000
             },
             "Medium": {
-                "lvl 1": 0.375,
-                "lvl 2": 0.75,
-                "lvl 3": 1.125,
+                "lvl 1": 0.0375,
+                "lvl 2": 0.075,
+                "lvl 3": 0.01125,
                 "lvl 4": 0.000
-            }
+            },
             "High": {
                 "lvl 1": 0.05,
-                "lvl 2": 0.10,
+                "lvl 2": 0.1,
                 "lvl 3": 0.15,
-                "lvl 4": 0.000   
+                "lvl 4": 0.000
             }
         },
         "Suspension": {
             "Low": {
-                "lvl 1": 0.15,
-                "lvl 2": 0.05,
-                "lvl 3": 0.45,
+                "lvl 1": 0.015,
+                "lvl 2": 0.03,
+                "lvl 3": 0.045,
                 "lvl 4": 0.06
             },
             "Medium": {
-                "lvl 1": 0.225,
-                "lvl 2": 0.45,
-                "lvl 3": 0.675,
+                "lvl 1": 0.0225,
+                "lvl 2": 0.045,
+                "lvl 3": 0.0675,
                 "lvl 4": 0.09
             },
             "High": {
                 "lvl 1": 0.03,
                 "lvl 2": 0.06,
                 "lvl 3": 0.09,
-                "lvl 4": 1.2
+                "lvl 4": 0.012
             }
         },
         "Transmission": {
@@ -65,19 +65,19 @@ document.addEventListener("DOMContentLoaded", () => {
                 "lvl 1": 0.02,
                 "lvl 2": 0.04,
                 "lvl 3": 0.06,
-                "lvl 4": 0.000
+                "lvl 4": 0.00
             },
             "Medium": {
                 "lvl 1": 0.03,
                 "lvl 2": 0.06,
                 "lvl 3": 0.09,
-                "lvl 4": 0.000
+                "lvl 4": 0.00
             },
             "High": {
                 "lvl 1": 0.04,
                 "lvl 2": 0.08,
-                "lvl 3": 1.2,
-                "lvl 4": 0.000
+                "lvl 3": 0.12,
+                "lvl 4": 0.00
             }
         }
     };
@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         // Add drift kit cost if checkbox is checked
-        if (driftKitCheckbox.checked) {]
+        if (driftKitCheckbox.checked) {
             const carPrice = parseFloat(carPriceInput.value);
             if (!isNaN(carPrice)) {
                 totalPrice += carPrice * 0.5; // Drift Kit cost is 50% of the car's price
