@@ -8,56 +8,53 @@ document.addEventListener("DOMContentLoaded", () => {
                 "lvl 4": 0.40
             },
             "Medium": {
-                "lvl 1": 0.10,
-                "lvl 2": 0.20,
-                "lvl 3": 0.30,
-                "lvl 4": 0.40
+                "lvl 1": 0.15,
+                "lvl 2": 0.30,
+                "lvl 3": 0.45,
+                "lvl 4": 0.60
             },
             "High": {
-                "lvl 1": 0.10,
-                "lvl 2": 0.20,
-                "lvl 3": 0.30,
-                "lvl 4": 0.40
+                "lvl 1": 0.20,
+                "lvl 2": 0.40,
+                "lvl 3": 0.60,
+                "lvl 4": 0.80
             }
         },
         "Brakes": {
             "Low": {
                 "lvl 1": 0.025,
                 "lvl 2": 0.05,
-                "lvl 3": 0.075,
-                "lvl 4": 0.075
+                "lvl 3": 0.075,   
             },
             "Medium": {
-                "lvl 1": 0.025,
-                "lvl 2": 0.05,
-                "lvl 3": 0.075,
-                "lvl 4": 0.075
+                "lvl 1": 0.375,
+                "lvl 2": 0.75,
+                "lvl 3": 1.125,
             },
             "High": {
-                "lvl 1": 0.025,
-                "lvl 2": 0.05,
-                "lvl 3": 0.075,
-                "lvl 4": 0.075
+                "lvl 1": 0.05,
+                "lvl 2": 0.10,
+                "lvl 3": 0.15,   
             }
         },
         "Suspension": {
             "Low": {
-                "lvl 1": 0.015,
-                "lvl 2": 0.03,
-                "lvl 3": 0.045,
+                "lvl 1": 0.15,
+                "lvl 2": 0.05,
+                "lvl 3": 0.45,
                 "lvl 4": 0.06
             },
             "Medium": {
-                "lvl 1": 0.015,
-                "lvl 2": 0.03,
-                "lvl 3": 0.045,
-                "lvl 4": 0.06
+                "lvl 1": 0.225,
+                "lvl 2": 0.45,
+                "lvl 3": 0.675,
+                "lvl 4": 0.09
             },
             "High": {
-                "lvl 1": 0.015,
-                "lvl 2": 0.03,
-                "lvl 3": 0.045,
-                "lvl 4": 0.06
+                "lvl 1": 0.03,
+                "lvl 2": 0.06,
+                "lvl 3": 0.09,
+                "lvl 4": 1.2
             }
         },
         "Transmission": {
@@ -65,19 +62,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 "lvl 1": 0.02,
                 "lvl 2": 0.04,
                 "lvl 3": 0.06,
-                "lvl 4": 0.06
             },
             "Medium": {
-                "lvl 1": 0.02,
-                "lvl 2": 0.04,
-                "lvl 3": 0.06,
-                "lvl 4": 0.06
+                "lvl 1": 0.03,
+                "lvl 2": 0.06,
+                "lvl 3": 0.09,
             },
             "High": {
-                "lvl 1": 0.02,
-                "lvl 2": 0.04,
-                "lvl 3": 0.06,
-                "lvl 4": 0.06
+                "lvl 1": 0.04,
+                "lvl 2": 0.08,
+                "lvl 3": 1.2,
             }
         }
     };
@@ -162,7 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         // Add drift kit cost if checkbox is checked
-        if (driftKitCheckbox.checked) {
+        if (driftKitCheckbox.checked) {]
             const carPrice = parseFloat(carPriceInput.value);
             if (!isNaN(carPrice)) {
                 totalPrice += carPrice * 0.5; // Drift Kit cost is 50% of the car's price
