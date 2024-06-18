@@ -24,20 +24,17 @@ document.addEventListener("DOMContentLoaded", () => {
             "Low": {
                 "lvl 1": 0.025,
                 "lvl 2": 0.05,
-                "lvl 3": 0.075,
-                "lvl 4": 0.000
+                "lvl 3": 0.075
             },
             "Medium": {
                 "lvl 1": 0.0375,
                 "lvl 2": 0.075,
-                "lvl 3": 0.01125,
-                "lvl 4": 0.000
+                "lvl 3": 0.01125
             },
             "High": {
                 "lvl 1": 0.05,
                 "lvl 2": 0.1,
-                "lvl 3": 0.15,
-                "lvl 4": 0.000
+                "lvl 3": 0.15
             }
         },
         "Suspension": {
@@ -64,20 +61,17 @@ document.addEventListener("DOMContentLoaded", () => {
             "Low": {
                 "lvl 1": 0.02,
                 "lvl 2": 0.04,
-                "lvl 3": 0.06,
-                "lvl 4": 0.00
+                "lvl 3": 0.06
             },
             "Medium": {
                 "lvl 1": 0.03,
                 "lvl 2": 0.06,
-                "lvl 3": 0.09,
-                "lvl 4": 0.00
+                "lvl 3": 0.09
             },
             "High": {
                 "lvl 1": 0.04,
                 "lvl 2": 0.08,
-                "lvl 3": 0.12,
-                "lvl 4": 0.00
+                "lvl 3": 0.12
             }
         }
     };
